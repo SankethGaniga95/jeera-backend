@@ -15,6 +15,7 @@ router.post('/task', async (req, res) => {
       priority,
       status,
       project_id,
+      assignedTeamMembers,
       role,
     });
 
