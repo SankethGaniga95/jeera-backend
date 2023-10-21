@@ -17,10 +17,10 @@ const taskSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Project',
   },
-  assignedTeamMembers: [{
+  assignedTeamMembers:{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User', // Reference to the User model for team members
-  }],
+  },
 });
 
 
